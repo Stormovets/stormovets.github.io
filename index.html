@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <title>Заглавная</title>
     <style>
+        /* Общие стили для всей страницы */
         body {
-            background-color: #ffffff; /* Цвет фона */
-            color: #000000;
-            font-family: "Arial", monospace;
+            background-color: #ffffff; /* Белый фон */
+            color: #000000;            /* Чёрный текст */
+            font-family: "Arial", sans-serif; /* Красивый стандартный шрифт */
             text-align: left;
-            padding-top: 30px;
-            padding-right: 10px;
+            padding-top: 30px;         /* Добавили px */
+            padding-right: 10px;       /* Исправили двоеточие на ; и добавили px */
         }
-        h1 { color: #010101; } /* Цвет хз чего, но не трогай */
+        
+        /* Стиль для обычных заголовков h1 */
+        h1 { 
+            color: #010101; 
+        } 
+        
+        /* Стили для мигающего текста (перенесли из body сюда) */
+        .blink-text {
+            animation: fast-blink 0.3s steps(1) infinite;
+            color: #ff0000; /* Красный */
+            font-weight: bold;
+        }
+        
+        @keyframes fast-blink {
+            50% { opacity: 0; }
+        }
     </style>
 </head>
 <body>
+
     <h1 class="blink-text">ЗАГЛАВНАЯ!!1!</h1>
-    <style>
-.blink-text {
-   animation: fast-blink 0.3s steps(1) infinite;
-    color: #ff0000; /* Красный */
-    font-weight: bold;
-}
-@keyframes fast-blink {
-  50% { opacity: 0; }
-}
-</style>
+    
     <p>Жди, ща все порешаем. Во всем виноват Я и курсор мыши!</p>
+
 </body>
 </html>
