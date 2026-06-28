@@ -2,20 +2,30 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Моя домашняя страничка</title>
+    <title>Заглавная</title>
     <style>
         body {
-            background-color: #000080; /* Тот самый синий цвет из Windows 95 */
-            color: #ffffff;
-            font-family: "Courier New", monospace;
+            background-color: #ffffff; /* Цвет фона */
+            color: #000000;
+            font-family: "Segoe UI", monospace;
             text-align: center;
             padding-top: 50px;
         }
-        h1 { color: #00ff00; } /* Кислотно-зеленый текст */
+        h1 { color: #010101; } /* Цвет текста */
     </style>
 </head>
 <body>
-    <h1>Добро пожаловать на мою домашнюю страничку!</h1>
-    <p>Сайт находится в разработке. Здесь будет чистое творчество без рекламы.</p>
+    <h1 class="blink-text">Заглавная!!1!</h1>
+    <style>
+.blink-text {
+    animation: blinker 1s linear infinite;
+    color: #ffff00; /* Желтый */
+    font-weight: bold;
+}
+@keyframes blinker {
+    50% { opacity: 0; }
+}
+</style>
+    <p>Ждите, ща порешаю проблемки сайта.</p>
 </body>
 </html>
